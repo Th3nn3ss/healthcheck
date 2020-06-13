@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    phpweb:
+        build: ./main 
+        ports: 
+            - 13000:80 
+        command: tail -f /dev/null
+
